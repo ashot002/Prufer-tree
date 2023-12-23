@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Prufer Tree Visualization</title>
+	<style>
+		canvas {
+			border: 1px solid black;
+
+		}
+
+		input {
+			font-size: 20px;
+			font-style: unset;
+			font-family: sans-serif;
+
+		}
+
+		#er {
+			visibility: hidden;
+			color: red;
+		}
+
+		#create {
+			width: 235px;
+			height: 38px;
+			font-size: 24px;
+			border: 1px solid;
+			border-radius: 20px;
+			cursor: pointer;
+		}
+		#create:hover{
+			opacity: 0.7;
+			background-color: aqua;
+		}
+		#create:active{
+			zoom: 0.9;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<div>
+			<h1>Պռուֆեռի կոդ</h1>
+			
+			<label style="font-size: 20px;font-style: unset;font-family: sans-serif;" for="inp">Մուտգագրեք կոդը
+				ստորակերով</label><br>
+			<input required placeholder="օրինակ ՝ 7,5,7,5,5,1" id="inp" type="text">
+			<button id="create">Ստեղծել ծառը</button>
+
+		</div>
+
+
+		<canvas id="pruferCanvas" width="500" height="500"></canvas>
+		<div class="error">
+			<h2 id="er" class="error"></h2>
+		</div>
+	</div>
+
+
+	<script>
+
+	</script>
+	<script src="script.js"></script>
+</body>
+
+</html>
